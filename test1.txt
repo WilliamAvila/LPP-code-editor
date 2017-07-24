@@ -1,0 +1,1 @@
+real val_prod, val_productodegan,operacion,val2 inicio escriba "ingrese el valor del producto original: " val_prod<-20 val2<-100 operacion<-val_prod+(val_prod*30)/val2 escriba "el comprador vedio o va avender su producto por un valor de : " , operacion fin 
