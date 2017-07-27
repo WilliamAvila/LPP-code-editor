@@ -1,27 +1,18 @@
-# [Start Bootstrap](http://startbootstrap.com/) - [Landing Page](http://startbootstrap.com/template-overviews/landing-page/)
-
-[Landing Page](http://startbootstrap.com/template-overviews/landing-page/) is a multipurpose landing page template for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/).
-
 ## Getting Started
 
-To begin using this template, choose one of the following options to get started:
-* [Download the latest release on Start Bootstrap](http://startbootstrap.com/template-overviews/landing-page/)
-* Clone the repo: `git clone https://github.com/BlackrockDigital/startbootstrap-landing-page.git`
-* Fork the repo
+To run the LPP code editor web application follow these steps:
+Clone the repo: `git clone https://github.com/WilliamAvila/LPP-code-editor.git`
 
-## Bugs and Issues
+## Run the server
+1.Go to the server folder and compile the program example `gcc example.c -o example'
 
-Have a bug or an issue with this template? [Open a new issue](https://github.com/BlackrockDigital/startbootstrap-landing-page/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/landing-page/).
+2.Get the LPP compiler from here [LPP-compiler](https://github.com/WilliamAvila/LPP-compiler) once you get the executable move it to the server folder 
 
-## Creator
+3.Download websocketd for your os [here](http://websocketd.com/#download) and move it to the server folder
 
-Start Bootstrap was created by and is maintained by **[David Miller](http://davidmiller.io/)**, Owner of [Blackrock Digital](http://blackrockdigital.io/).
+4.Start the server run `./websocketd --port=8080  ./example` in the server folder
 
-* https://twitter.com/davidmillerskt
-* https://github.com/davidtmiller
-
-Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
 ## Copyright and License
 
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/BlackrockDigital/startbootstrap-landing-page/blob/gh-pages/LICENSE) license.
+Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/WilliamAvila/LPP-code-editor/LICENSE) license.
