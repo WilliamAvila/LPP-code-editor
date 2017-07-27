@@ -4,7 +4,7 @@ To run the LPP code editor web application follow these steps:
 Clone the repo: `git clone https://github.com/WilliamAvila/LPP-code-editor.git`
 
 ## Run the server
-1.Go to the server folder and compile the program example `gcc example.c -o example`
+1.Go to the server folder and compile the program example on LINUX `g++ -std=c++11 -pthread -o example example.cpp` or `clang++ -std=c++11 -pthread -o example example.cpp`on MAC OSX
 
 2.Get the LPP compiler from here [LPP-compiler](https://github.com/WilliamAvila/LPP-compiler) once you get the executable move it to the server folder 
 
