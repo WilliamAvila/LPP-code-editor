@@ -57,7 +57,7 @@
             console.log(input);
             return res;
         }
-        var ws = new WebSocket('ws://174.138.79.202:80/');
+        var ws = new WebSocket('ws://:174.138.79.202/wsapp/');
 
         ws.onmessage = function (event) {
             var editor = ace.edit("editor");
@@ -68,7 +68,10 @@
 
         function send() {
             var editor = ace.edit("editor");
-            ws.send(insertValues(editor.getValue(),getInputsAndValues()));
+            if(document.getElementById('input').value != '')
+                ws.send(insertValues(editor.getValue(),getInputsAndValues()));
+            else
+                ws.send(editor.getValue());
             //ws.send(editor.getValue());
         }
 
@@ -95,10 +98,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#services">Ejemplos</a>
+                        <a href="#examples">Ejemplos</a>
                     </li>
                     <li>
-                        <a href="#contact">Acerca de</a>
+                        <a href="#about">Acerca de</a>
                     </li>
                 </ul>
             </div>
@@ -109,7 +112,7 @@
 
 
     <!-- Header -->
-    <a name="about"></a>
+    <a name="home"></a>
     <div class="intro-header">
         <div class="container">
 
@@ -125,7 +128,10 @@
         </div>
         <div class="panel-body">
 
-                    <div id="editor">some text</div>
+                    <div id="editor">inicio
+escriba "hola mundo"
+fin
+                    </div>
         </div>
     </div>
     </div>
@@ -162,49 +168,59 @@
 
     <!-- Page Content -->
 
-    <a name="services"></a>
+    <a name="examples"></a>
     <div class="content-section-a">
 
         <div class="container">
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-lg-6 col-sm-7 ">
                     <h2 class="section-heading">Ejemplo de Asignacion y Expresion</h2>
+                          <div class="panel panel-default"> 
+                            <div class="panel-body">
                     <div id="example">entero km,hrs,operacion 
 inicio
 km<-160 
 hrs<-5 
 operacion<-km/hrs 
 escriba "la velocidad del auto por hora fue : " , operacion 
-fin </div>
+fin </div></div></div>
+
                     </div>
 
+
                 </div>
+
+
                 
+
+            </div>
                 
                 <!-- /.container -->
 
-            </div>
+        </div>
             <!-- /.content-section-a -->
-
+    </div>
             <div class="content-section-b">
 
                 <div class="container">
 
                     <div class="row">
-                        <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                        <div class="col-lg-5 col-sm-push-6  col-sm-6">
                             <h2 class="section-heading">Ejemplo de Estructuras Condicionales</h2>
+                             <div class="panel panel-default"> 
+                            <div class="panel-body">
                              <div id="example1">entero division, num1 , num2
 inicio
 num1 <- 5
 num2 <- 0
 si num2=0 entonces
     escriba "operacion indefinida"
-sino 
-si num2>0 entonces
-        escriba  "operacion definida"
-fin si 
+    sino si num2>0 entonces
+        escriba  num1/mum2
+    fin si 
 fin si
-fin</div>
+
+fin</div></div></div>
                             </div>
                          
 
@@ -212,20 +228,22 @@ fin</div>
 
                     </div>
 
-                </div>
+               
                 <!-- /.container -->
 
             </div>
             <!-- /.content-section-b -->
 
-            <div class="content-section-a">
+            <div class="content-section-c">
 
                 <div class="container">
 
                     <div class="row">
-                        <div class="col-lg-5 col-sm-6">
+                        <div class="col-lg-6 col-sm-7">
                             <div class="clearfix"></div>
                             <h2 class="section-heading">Ejemplo de Ciclos y Funciones</h2>
+                             <div class="panel panel-default"> 
+                            <div class="panel-body">
                             <div id="example2">entero base,expo,pot
 funcion potencia(entero b , entero e): entero entero i, resp
 inicio
@@ -240,7 +258,7 @@ inicio
     
       pot<-potencia(2,3)
       escriba "Potencia es ", pot
-fin</div>
+fin</div></div></div>
                         </div>
 
                     </div>
@@ -251,7 +269,7 @@ fin</div>
             </div>
             <!-- /.content-section-a -->
 
-            <a name="contact"></a>
+            <a name="about"></a>
             <div class="banner">
 
                 <div class="container">
@@ -267,7 +285,7 @@ fin</div>
                         <div class="col-lg-6">
                             <ul class="list-inline banner-social-buttons">
                                 <li>
-                                    <a href="https://github.com/IronSummitMedia/startbootstrap" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+                                    <a href="https://github.com/WilliamAvila/LPP-code-editor" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -291,14 +309,14 @@ fin</div>
                                 <li class="footer-menu-divider">&sdot;</li>
                            
                                 <li>
-                                    <a href="#services">Ejemplos</a>
+                                    <a href="#examples">Ejemplos</a>
                                 </li>
                                 <li class="footer-menu-divider">&sdot;</li>
                                 <li>
-                                    <a href="#contact">Acerca de</a>
+                                    <a href="#about">Acerca de</a>
                                 </li>
                             </ul>
-                            <p class="copyright text-muted small">Copyright &copy; Your Company 2014. All Rights Reserved</p>
+                            <p class="copyright text-muted small">Copyright &copy; Willian Avila. All Rights Reserved</p>
                         </div>
                     </div>
                 </div>

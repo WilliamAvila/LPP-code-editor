@@ -5,12 +5,12 @@
 
     #example, #example1 {
         
-        width: 470px;
+  
         height: 200px;
     }
 
     #example2{
-        width: 470px;
+
         height: 250px;
        
     }
@@ -18,5 +18,6 @@
     #example3{
         width: 470px;
         height: 250px;
-       
+       float:left;
+       position:relative;
     }
