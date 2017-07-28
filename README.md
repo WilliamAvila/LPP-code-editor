@@ -15,4 +15,4 @@ Clone the repo: `git clone https://github.com/WilliamAvila/LPP-code-editor.git`
 
 ## Copyright and License
 
-Copyright 2013-2016 Blackrock Digital LLC. Code released under the [MIT](https://github.com/WilliamAvila/LPP-code-editor/blob/master/LICENSE) license.
+Copyright 2017 Willian Avila. Code released under the [MIT](https://github.com/WilliamAvila/LPP-code-editor/blob/master/LICENSE) license.
