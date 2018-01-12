@@ -12,6 +12,7 @@ Clone the repo: `git clone https://github.com/WilliamAvila/LPP-code-editor.git`
 
 4.Start the server run `./websocketd --port=8080  ./example` in the server folder
 
+5.Open the index.html on your browser and start running LPP code 
 
 ## Copyright and License
 
